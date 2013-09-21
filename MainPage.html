@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myPage">
+<head>
+	<title>AngularJS Application</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="text/javascript"></script>
+	<script src="components.js"></script>
+</head>
+<body>
+		</br>
+		</br>
+		</br>
+		<div id='welcome' align='center'>
+			<label>Name:</label>
+			<input type="text" ng-model="yourName" placeholder="Enter your name here">
+			<h1>Welcome to MyPage {{yourName}}!</h1>
+		</div>
+		<tabs>
+			<pane title="Localization">
+				Date: {{ '2012-04-01' | date:'fullDate' }} <br>
+				
+				Number: {{ 98765.4321 | number }} <br>
+			</pane>
+			<br>
+			<pane title="Pluralization">
+				Currency: {{ 123456 | currency }} <br>
+			</pane>
+		</tabs>
+</body>
+</html>
